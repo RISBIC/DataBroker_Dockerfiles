@@ -8,8 +8,8 @@ Contains a Dockerfile (and config files) to build a docker container (based off 
 
 From the `docker/web` directory run:
 
-    docker build -t broker:web .
+    docker build -t risbic:web .
 
 Then (with a container named db) execute the following:
 
-    docker run -d -P --name web --link db:db broker:web
+    docker run -d -P --name web --link db:db risbic:web

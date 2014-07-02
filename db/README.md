@@ -6,8 +6,8 @@ Contains a Dockerfile to build a docker container (based on Ubuntu 14.04) with P
 
 From the `docker/db` directory run:
 
-    docker build -t broker:db .
+    docker build -t risbic:db .
 
 Then execute the following:
 
-    docker run -d --name db broker:db
+    docker run -d --name db risbic:db
