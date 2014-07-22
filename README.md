@@ -6,16 +6,16 @@ Dockerfiles for creating DataBroker Web and DB containers
 
 In `./db`:
 
-    docker build -t risbic:db .
+    docker build -t risbic/db .
 
 In `./web`:
 
-    docker build -t risbic:web .
+    docker build -t risbic/web .
 
 # Running (and linking) the containers
 
-    docker run -d --name db risbic:db
-    docker run -d -P --name web --link db:db risbic:web
+    docker run -d --name db1 risbic/db
+    docker run -d -P --name web1 --link db1:db risbic/web
 
 Then check the output of `docker ps` the `PORTS` column of the `web` row should contain something like:
 
