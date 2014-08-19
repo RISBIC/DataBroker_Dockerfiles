@@ -10,7 +10,7 @@ To build the container, in './databroker_webportal':
     ./prepare.sh
     docker build -t risbic/databroker_webportal .
 
-To run the container:
+To run the container, in './databroker_webportal':
  
     docker run -t -i -p 80:8080 -p 443:8433 -p 9990:9990 --name databroker risbic/databroker_webportal
 
