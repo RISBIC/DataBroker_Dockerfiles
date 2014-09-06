@@ -336,6 +336,18 @@
                         <policy-module code="Delegating" flag="required"/>
                     </authorization>
                 </security-domain>
+                <security-domain name="DataBrokerWebPortalRealm" cache-type="default">
+                    <authentication>
+                        <login-module code="org.jboss.security.auth.spi.DatabaseServerLoginModule" flag="required">
+                            <module-option name="dsJndiName" value="java:jboss/datasources/PostgreSQLDS"/>
+                            <module-option name="principalsQuery" value="SELECT password FROM DBWP_Users WHERE username = ?"/>
+                            <module-option name="rolesQuery" value="SELECT rolename, rolegroup FROM DBWP_Roles WHERE username = ?"/>
+                            <module-option name="hashAlgorithm" value="SHA-512"/>
+                            <module-option name="hashEncoding" value="hex"/>
+                            <module-option name="unauthenticatedIdentity" value="guest"/>
+                        </login-module>
+                    </authentication>
+                </security-domain>
             </security-domains>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:transactions:2.0">
