@@ -59,10 +59,9 @@ RUN /bin/initdb &&\
 # Install DataBroker and WebPortal 
 #
 
-ADD DataBroker/webportal-ear/target/webportal-ear-1.0.0p1m1.ear /opt/wildfly/standalone/deployments/webportal-ear-1.0.0p1m1.ear
+ADD DataBroker/webportal-ear/target/webportal-ear-1.0.0p1m2l.ear /opt/wildfly/standalone/deployments/webportal-ear-1.0.0p1m2l.ear
 ADD DataBroker/server-ear/target/databroker.ear /opt/wildfly/standalone/deployments/databroker.ear
-ADD DataFlow_Utilities/dataflow-utils-ear/target/dataflow-utils.ear /opt/wildfly/standalone/deployments/dataflow-utils.ear
-ADD Simple_DataBroker_PlugIn/simple-plugin-ear/target/simple-plugin-ear-1.0.0p1m1.ear /opt/wildfly/standalone/deployments/simple-plugin-ear-1.0.0p1m1.ear
+ADD Simple_DataBroker_PlugIn/simple-plugin-ear/target/simple-plugin-ear-1.0.0p1m2l.ear /opt/wildfly/standalone/deployments/simple-plugin-ear-1.0.0p1m2l.ear
 
 #
 # Run WildFly and PostgreSQL

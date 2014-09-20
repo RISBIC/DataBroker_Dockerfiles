@@ -1,3 +1,3 @@
 #!/bin/sh
 
-rm -rf DataBroker DataFlow_Utilities Simple_DataBroker_PlugIn
+rm -rf DataBroker Simple_DataBroker_PlugIn
