@@ -12,6 +12,9 @@ RUN yum -y install java-1.7.0-openjdk-devel postgresql postgresql-server; yum cl
 # Install Wildfly-8.1.0.Final with PostgreSQL 9.3 module
 #
 
+# Update package: bash - Patch to avoid "Shellshock" bug
+RUN yum -y update bash; yum clean all
+
 # Add the WildFly distribution to /opt
 RUN cd /opt && curl http://download.jboss.org/wildfly/8.1.0.Final/wildfly-8.1.0.Final.tar.gz | tar zx &&\
     ln -s /opt/wildfly-8.1.0.Final /opt/wildfly
