@@ -14,7 +14,10 @@ To run the container, in './databroker_webportal':
 
     (The command "systemctl stop firewalld.service" could be useful, on Fedora 20, to disable the firewall)
 
-The latest stable version of this image is available from git hub, using the command:
+The latest stable version of this image is available from Docker Hub, using the command:
 
     docker pull risbic/databroker_webportal:latest
 
+To publish an updated docker image to Docker Hub, using the comment:
+
+    docker push risbic/databroker_webportal:latest
