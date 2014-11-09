@@ -2,7 +2,7 @@
 
 Dockerfiles for creating DataBroker single container or seperate Web and DB containers
 
-Preperpared docker images can be downloaded for Docker Hub: https://hub.docker.com/u/risbic/
+Pre-perpared docker images can be downloaded for Docker Hub: https://hub.docker.com/u/risbic/
 
 Building a single container
 ---------------------------
